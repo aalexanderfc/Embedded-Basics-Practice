@@ -63,7 +63,7 @@ void loop() {
     }
   }
 
-  lastButtonState1 = reading1;
+  lastButtonState1 = reading1;//för att lagra det föregående tillståndet för knapp
 
   int reading2 = digitalRead(buttonPin2);//för att läsa tillståndet av knapp 2
   if (reading2 != lastButtonState2) {
@@ -80,7 +80,7 @@ void loop() {
     }
   }
 
-  lastButtonState2 = reading2;
+  lastButtonState2 = reading2;//för att lagra det föregående tillståndet för knapp
 
   delay(100);
 }
